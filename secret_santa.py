@@ -30,7 +30,7 @@ def gen_html(
     input_path: Path, output_path: Path, id: str, author: str, recipient: str
 ) -> None:
     out_html_path = output_path / f"{id}.html"
-    input_html = input_path / "template.html".read_text()
+    input_html = (input_path / "template.html").read_text()
     # fmt: off
     output_html = (
         input_html
@@ -65,7 +65,7 @@ def main() -> None:
     gen_spoiler(output_path, pairs)
     for author, recipient in pairs.items():
         id = secrets.token_hex(3)
-        gen_html(output_path, str(id), author, recipient)
+        gen_html(input_path, output_path, str(id), author, recipient)
 
 
 if __name__ == "__main__":
