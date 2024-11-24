@@ -1,0 +1,25 @@
+body {
+  margin:40px auto;
+  max-width:650px;
+  line-height:1.6;
+  font-size:30px;
+  color: #FCCB06;
+  font-weight: bold;
+  font-family: "Atma";
+  text-shadow: 0.07em 0.07em 0.05em black;
+  padding:0 10px;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+h1, h2, h3 {
+  line-height:1.2;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display : block;
+}
